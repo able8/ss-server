@@ -1,0 +1,14 @@
+version: '2'
+services:
+  ssserver:
+    image: TestCloud:5000/dorry/ssserver:0.1.0
+    restart: always
+    privileged: true
+    tty: true
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    environment:
+      - LOCAL_PORT=8388
+      - PASSWD=test
+      - ENCRYPT_METHOD=aes-256-cfb
