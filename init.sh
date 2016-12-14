@@ -1,7 +1,7 @@
 #! /bin/bash
-for VARIABLE in LOCAL_PORT ENCRYPT_METHOD PASSWD
+for VARIABLE in LOCAL_PORT ENCRYPT_METHOD PASSWD;
 do
-  if [[ -z "${VARIABLE}" ]]; then
+  if [[ -z "${!VARIABLE}" ]]; then
     echo Error: $VARIABLE is not defined, please check your docker-compose.yml
     exit
   fi
