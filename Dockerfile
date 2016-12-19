@@ -25,4 +25,4 @@ RUN rm -rf $SS_DIR && \
 
 ADD init.sh ./
 
-ENTRYPOINT sh init.sh
+ENTRYPOINT ./init.sh
