@@ -1,8 +1,8 @@
 version: '2'
 services:
   ssserver:
-    #    image: TestCloud:5000/dorry/ssserver:0.1.0
     build: .
+    image: ssserver
     restart: always
     privileged: true
     tty: true
