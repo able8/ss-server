@@ -23,6 +23,6 @@ RUN rm -rf $SS_DIR && \
     apk del --purge $SS_DEP && \
     rm -rf /var/cache/apk/*
 
-ADD init.sh ./
+ADD init ./
 
-ENTRYPOINT ./init.sh
+ENTRYPOINT ./init
