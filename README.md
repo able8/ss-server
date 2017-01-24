@@ -1,5 +1,11 @@
 # ss-server
-ss-server is a Docker image of shadowsocks server with version 2.4.6, built on x86 64-bits.
+ss-server is a Docker image of shadowsocks server, built on x86 64-bits.
+
+### Version
+
+* 2.6.2
+* 2.4.6
+
 
 ### Usage
  
